@@ -1,15 +1,11 @@
 public class Drum implements Instrument {
 
-    private String size = "22″ x 18″";
-
-    public void setSize(String size) { this.size = size; }
-
-    public String getSize() { return size; }
+     int size;
 
     @Override
-    public  void play() { System.out.println("Барабан is playing. " + toString()); }
+    public  void play() {
+        System.out.println("Барабан is playing в ключе " + KEY + ". Размер барабанов: " + size + " дюймов");
+    }
 
-    @Override
-    public String toString() { return "Размер барабанов: " + size; }
 
 }

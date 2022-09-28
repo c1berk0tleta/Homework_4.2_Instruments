@@ -2,16 +2,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-            Instrument[] i = new Instrument[3];
-            i[0] = new Guitar();
-            i[1] = new Drum();
-            i[2] = new PolnayaTruba();
+        Guitar g = new Guitar();
+        g.strNumber = 6;
+        Drum d = new Drum();
+        d.size = 14;
+        Trumpet t = new Trumpet();
+        t.diameter = 11;
 
-            for (Instrument instrument : i) {
-                instrument.play();
+        Instrument[] i = {g,d,t};
+        for (Instrument instruments : i) {
+            instruments.play();
             }
-
         }
-
     }
 
